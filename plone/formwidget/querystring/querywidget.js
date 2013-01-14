@@ -265,7 +265,7 @@
 
         // Synchronize the z3c.form '#form-widgets-sort_on' field
         // with the '#sort_on' field on user interaction
-        $("#sort_on").live('click', function () {
+        $("#sort_on").live('change', function () {
             $('#form-widgets-sort_on').val($(this).val());
         });
 
