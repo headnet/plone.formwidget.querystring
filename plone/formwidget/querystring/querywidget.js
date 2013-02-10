@@ -254,7 +254,6 @@
 	// Synchronize the empty #form-widgets-sort_on z3c.form field
 	// with the '#sort_on' field on load when adding.
 	if ( !$('#form-widgets-sort_on').val() ) {
-	    alert($('#sort_on').val());
 	    $('#form-widgets-sort_on').val($('#sort_on').val());
 	}
 	
