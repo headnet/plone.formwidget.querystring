@@ -251,6 +251,13 @@
         // collection we need the two z3c.form-based fields
         // ('#form-widgets-sort_on', '#form-widgets-sort_reversed')
 
+	// Synchronize the empty #form-widgets-sort_on z3c.form field
+	// with the '#sort_on' field on load when adding.
+	if ( !$('#form-widgets-sort_on').val() ) {
+	    alert($('#sort_on').val());
+	    $('#form-widgets-sort_on').val($('#sort_on').val());
+	}
+	
         // Synchronize the '#sort_on' field with the hidden
         // #form-widgets-sort_on z3c.form field on load.
         $('#sort_on').val($('#form-widgets-sort_on').val());
